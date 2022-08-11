@@ -13,6 +13,9 @@
     "airbnb-base"
   ],
   "rules": {
+    "quotes": "off",
+    "dot-notation": "off",
+    "arrow-body-style": "off",
     "no-use-before-define": "off",
     "class-methods-use-this": "off",
     "no-unused-vars": "off",
