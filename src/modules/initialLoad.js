@@ -1,7 +1,7 @@
 import grabber from './grabber.js';
-import listItem from './listItem.js';
+import ListItem from './listItem.js';
 
-const lItem = new listItem();
+const lItem = new ListItem();
 
 const initialLoad = () => {
   grabber('list-contents').innerHTML = '';
@@ -10,8 +10,7 @@ const initialLoad = () => {
   container.classList = 'ps-3 pe-3';
   todoList.forEach((item, index) => {
     const element = document.createElement('li');
-    element.classList =
-      'd-flex w-100 justify-content-between border-bottom pb-1 pt-1';
+    element.classList = 'd-flex w-100 justify-content-between border-bottom pb-1 pt-1';
     const fHolder = document.createElement('div');
     const sHolder = document.createElement('div');
     fHolder.classList = 'd-flex justify-content-start gap-3';
@@ -47,7 +46,7 @@ const initialLoad = () => {
       lItem.deleteItem(index);
     });
 
-    if (item.status == 'checked') {
+    if (item.status === 'checked') {
       btn.checked = true;
       des.innerHTML = item.description.strike();
     } else {

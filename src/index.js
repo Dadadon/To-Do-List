@@ -1,10 +1,10 @@
 import _, { initial } from 'lodash';
 import './style.css';
-import listItem from './modules/listItem.js';
+import ListItem from './modules/listItem.js';
 import grabber from './modules/grabber.js';
 import initialLoad from './modules/initialLoad.js';
 
-const lItem = new listItem();
+const lItem = new ListItem();
 const todoList = JSON.parse(localStorage.getItem('todoList')) || [];
 
 console.log(todoList);

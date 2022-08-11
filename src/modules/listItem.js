@@ -1,7 +1,7 @@
 const todoList = JSON.parse(localStorage.getItem('todoList')) || [];
 const form = document.forms['todoForm'];
 
-export default class listItem {
+export default class ListItem {
   constructor(description, status, position) {
     this.description = description;
     this.status = status;
@@ -17,7 +17,7 @@ export default class listItem {
     const descr = form.addTodo;
     const pos = todoList.length;
     const stat = 'not checked';
-    const item = new listItem(descr.value, stat, pos);
+    const item = new ListItem(descr.value, stat, pos);
     todoList.push(item);
 
     localStorage.setItem('todoList', JSON.stringify(todoList));
