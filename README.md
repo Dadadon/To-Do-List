@@ -23,7 +23,7 @@ Additional description about the project and its features.
 
 >To get a local copy up and running follow these simple steps.
  - Clone this repository or download the Zip folder
-    **````**
+    **``https://github.com/Dadadon/To-Do-List.git``**
  - Navigate to the location of the folder in your machine
     **``you@your-Pc-name:~$ cd <folder>``**
  
