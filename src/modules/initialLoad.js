@@ -36,11 +36,11 @@ const initialLoad = () => {
 
     btn2.innerHTML = `<i class='fas fa-ellipsis-v'>`;
     btn2.addEventListener('mouseover', () => {
-      btn2.innerHTML = '<i class='fas fa-trash-alt'></i>';
+      btn2.innerHTML = `<i class='fas fa-trash-alt'></i>`;
     });
 
     btn2.addEventListener('mouseout', () => {
-      btn2.innerHTML = '<i class='fas fa-ellipsis-v'>';
+      btn2.innerHTML = `<i class='fas fa-ellipsis-v'>`;
     });
 
     btn2.addEventListener('click', () => {
