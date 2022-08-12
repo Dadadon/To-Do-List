@@ -15,17 +15,17 @@
 <body class="p-5">
     <h1>What do you have planned today?</h1>
     <section class="mt-5">
-        <div id="list-container" class="container w-50 d-grid border border-dark">
-            <div class="d-flex w-100 justify-content-between">
+        <div id="list-container" class="container w-75 d-grid border border-dark p-1">
+            <div class="d-flex justify-content-between">
                 <h5 class="mt-3">TO DO</h5>
-                <button type="button" class="btn btn-default" aria-label="Left Align">
+                <button type="button" class="btn btn-default el" aria-label="Left Align">
                     <i class="fas fa-sync"></i>
                 </button>
             </div>
             <div id="form-container">
-                <form class="d-flex w-100 justify-content-between border-bottom p-1 mb-2" name="todoForm">
-                    <input class="border-0 w-100" type="text" name="addTodo" placeholder="Add to your list...">
-                    <button class="border-0 bg-white" id="submit"><i class="fas fa-plus-circle"></i></button>
+                <form onsubmit="event.preventDefault();" class="d-flex w-100 justify-content-between border-bottom p-1 mb-2" name="todoForm">
+                    <input class="border-0" type="text" name="addTodo" placeholder="Add to your list...">
+                    <button class="border-0 bg-white el" id="submit"><i class="fas fa-plus-circle"></i></button>
                 </form>
             </div>
             <div id="list-contents"></div>
