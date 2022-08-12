@@ -1,6 +1,7 @@
 import grabber from './grabber';
 import initialLoad from './initialLoad';
 
-export function reload() {
+const reload = () => {
   grabber('list-contents').appendChild(initialLoad());
 }
+export default reload;

@@ -1,6 +1,6 @@
 import grabber from './grabber.js';
 import ListItem from './listItem.js';
-import { reload } from './ui.js';
+import reload from './ui.js';
 
 const lItem = new ListItem();
 
@@ -12,8 +12,7 @@ const initialLoad = () => {
   todoList.forEach((item, index) => {
     lItem.setPosition(index);
     const element = document.createElement('li');
-    element.classList =
-      'd-flex w-100 justify-content-between border-bottom pb-1 pt-1';
+    element.classList = 'd-flex w-100 justify-content-between border-bottom pb-1 pt-1';
     const fHolder = document.createElement('div');
     const sHolder = document.createElement('div');
     fHolder.classList = 'd-flex justify-content-start gap-3';
