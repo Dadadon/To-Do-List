@@ -12,7 +12,8 @@ const initialLoad = () => {
   todoList.forEach((item, index) => {
     lItem.setPosition(index);
     const element = document.createElement('li');
-    element.classList = 'd-flex w-100 justify-content-between border-bottom pb-1 pt-1';
+    element.classList =
+      'd-flex w-100 justify-content-between border-bottom pb-1 pt-1';
     const fHolder = document.createElement('div');
     const sHolder = document.createElement('div');
     fHolder.classList = 'd-flex justify-content-start gap-3';
@@ -48,14 +49,11 @@ const initialLoad = () => {
       });
     });
 
-
     btn2.innerHTML = `<i class='fas fa-trash-alt'></i>`;
-     btn2.addEventListener('click', () => {
-       lItem.deleteItem(index);
-       reload();
-     });
-
-    
+    btn2.addEventListener('click', () => {
+      lItem.deleteItem(index);
+      reload();
+    });
 
     if (item.status === 'checked') {
       btn.checked = true;

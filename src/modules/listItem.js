@@ -9,7 +9,7 @@ export default class ListItem {
   }
 
   addItem() {
-    if (form.addTodo.value == '') {
+    if (form.addTodo.value === '') {
       alert('Please add text');
     } else {
       const descr = form.addTodo;
