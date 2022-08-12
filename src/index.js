@@ -10,9 +10,8 @@ grabber('submit').addEventListener('click', () => {
   reload();
 });
 
-grabber('clear-container').addEventListener('click', () => { 
+grabber('clear-container').addEventListener('click', () => {
   lItem.filterList();
   reload();
-
-})
+});
 reload();
