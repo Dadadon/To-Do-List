@@ -13,6 +13,8 @@
     "airbnb-base"
   ],
   "rules": {
+    "array-callback-return": "off",
+    "consistent-return": "off",
     "import/no-cycle": "off",
     "quotes": "off",
     "dot-notation": "off",
