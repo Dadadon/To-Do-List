@@ -9,4 +9,10 @@ grabber('submit').addEventListener('click', () => {
   lItem.addItem();
   reload();
 });
+
+grabber('clear-container').addEventListener('click', () => { 
+  lItem.filterList();
+  reload();
+
+})
 reload();

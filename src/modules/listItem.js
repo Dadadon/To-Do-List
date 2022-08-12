@@ -1,4 +1,4 @@
-const todoList = JSON.parse(localStorage.getItem('todoList')) || [];
+let todoList = JSON.parse(localStorage.getItem('todoList')) || [];
 const form = document.forms['todoForm'];
 
 export default class ListItem {
@@ -41,6 +41,15 @@ export default class ListItem {
   deleteItem(index) {
     todoList.splice(index, 1);
     localStorage.setItem('todoList', JSON.stringify(todoList));
-    console.log(todoList);
+  }
+
+  filterList() {
+    todoList = todoList.filter((item) => {
+      if (item.status === 'not checked') {
+        return item;
+      }
+    });
+    localStorage.clear();
+    localStorage.setItem('todoList', JSON.stringify(todoList));
   }
 }

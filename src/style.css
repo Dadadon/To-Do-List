@@ -18,3 +18,8 @@ p {
   hyphens: auto;
   white-space: normal;
 }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
