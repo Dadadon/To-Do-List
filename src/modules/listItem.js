@@ -8,24 +8,39 @@ export default class ListItem {
     this.position = position;
   }
 
-  deleteItem(index) {
-    todoList.splice(index, 1);
-    localStorage.setItem('todoList', JSON.stringify(todoList));
-  }
-
   addItem() {
-    const descr = form.addTodo;
-    const pos = todoList.length;
-    const stat = 'not checked';
-    const item = new ListItem(descr.value, stat, pos);
-    todoList.push(item);
+    if (form.addTodo.value == '') {
+      alert('Please add text');
+    } else {
+      const descr = form.addTodo;
+      const pos = todoList.length;
+      const stat = 'not checked';
+      const item = new ListItem(descr.value, stat, pos);
+      todoList.push(item);
 
-    localStorage.setItem('todoList', JSON.stringify(todoList));
-    document.forms['todoForm'].reset();
+      localStorage.setItem('todoList', JSON.stringify(todoList));
+      document.forms['todoForm'].reset();
+    }
   }
 
   setStatus(index, stat) {
     todoList[index].status = stat;
     localStorage.setItem('todoList', JSON.stringify(todoList));
+  }
+
+  setDescription(index, descr) {
+    todoList[index].description = descr;
+    localStorage.setItem('todoList', JSON.stringify(todoList));
+  }
+
+  setPosition(index) {
+    todoList[index].position = index;
+    localStorage.setItem('todoList', JSON.stringify(todoList));
+  }
+
+  deleteItem(index) {
+    todoList.splice(index, 1);
+    localStorage.setItem('todoList', JSON.stringify(todoList));
+    console.log(todoList);
   }
 }
