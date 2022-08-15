@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "serve": "webpack serve"
+    "serve": "webpack serve",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/Dadadon/To-Do-List/issues"
   },
-  "homepage": "https://github.com/Dadadon/To-Do-List#readme",
+  "homepage": "https://dadadon.github.io/To-Do-List",
   "devDependencies": {
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
