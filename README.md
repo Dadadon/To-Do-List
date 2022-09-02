@@ -1,6 +1,6 @@
 # To-Do-List
 
- This is my To-Do List project
+ This is my To-Do List project that allows users to add, edit, remove and update the status of todo items that are stored in local storage
 Additional description about the project and its features.
 
 ## Live Preview Link
